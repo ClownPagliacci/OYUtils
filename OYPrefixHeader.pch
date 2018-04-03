@@ -1,0 +1,22 @@
+//
+//  OYPrefixHeader.pch
+//  AnlatBanaNew
+//
+//  Created by Orçun Yüksel on 07/06/2017.
+//  Copyright © 2017 Orçun Yüksel. All rights reserved.
+//
+
+#ifndef OYPrefixHeader_pch
+#define OYPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* OYPrefixHeader_pch */
+
+#import "AppDelegate.h"
+#import "OYUtils.h"
+
+#define DELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+
