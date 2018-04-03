@@ -1,0 +1,6 @@
+use_frameworks!
+target 'OYUtils_Tests' do
+  pod 'OYUtils', :path => '../'
+  
+  
+end
