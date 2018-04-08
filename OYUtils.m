@@ -91,6 +91,10 @@ static OYUtils *_shared = nil;
     [vc.navigationController pushViewController:[[UIStoryboard storyboardWithName:storyboard bundle:nil] instantiateViewControllerWithIdentifier:identifier] animated:YES];
 }
 
++ (void)presentViewController:(UIViewController *)vc withStoryboardName:(NSString *)storyboard withIdentifier:(NSString *)identifier{
+    [vc presentViewController:[[UIStoryboard storyboardWithName:storyboard bundle:nil] instantiateViewControllerWithIdentifier:identifier] animated:YES completion:nil];
+}
+
 + (void)activateEdgeSwipe:(UIViewController *)vc isActive:(BOOL)active{
     if (active) {
         vc.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)vc;

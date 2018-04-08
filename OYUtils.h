@@ -46,6 +46,7 @@
 + (CGSize)getScreenSize;
 + (void)activateEdgeSwipe:(UIViewController *)vc isActive:(BOOL)active;
 + (void)pushViewController:(UIViewController *)vc withStoryboardName:(NSString *)storyboard withIdentifier:(NSString *)identifier;
++ (void)presentViewController:(UIViewController *)vc withStoryboardName:(NSString *)storyboard withIdentifier:(NSString *)identifier;
 + (void)setView:(UIView*)view hidden:(BOOL)hidden withOptions:(UIViewAnimationOptions)option animationDuration:(double)duration;
 + (UIAlertController *)showAlertMessage:(NSString *)message
                               withTitle:(NSString *)title
